@@ -14,6 +14,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import TeamSingle from "./pages/TeamSingle";
 import Pages from "./pages/Pages";
+import Login from './components/Login'
 
 function App() {
   const action = useNavigationType();
@@ -32,6 +33,10 @@ function App() {
 
     switch (pathname) {
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/login":
         title = "";
         metaDescription = "";
         break;
@@ -86,6 +91,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/blogsingle" element={<BlogSingle />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
