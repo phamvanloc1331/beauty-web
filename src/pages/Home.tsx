@@ -110,7 +110,7 @@ const Home: FunctionComponent = () => {
         </div>
       </div>
       <a className="[text-decoration:none] absolute w-[52.85%] top-[48px] right-[2.29%] left-[44.85%] flex flex-row items-center justify-end gap-[32px] text-dimgray font-manrope">
-        <div className="w-[352px] h-[23px] flex flex-row items-center justify-end">
+        <div className="w-[450px] h-[23px] flex flex-row items-center justify-end">
           <div className="relative leading-[125%] flex items-center w-[84px] h-[30px] shrink-0">
             Home
           </div>
