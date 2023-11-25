@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -16,6 +16,15 @@ body {
   border-width: 0;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @keyframes slide-in-top {
   0% {
     transform: translateY(-200px);
@@ -23,15 +32,6 @@ body {
   }
   100% {
     transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }

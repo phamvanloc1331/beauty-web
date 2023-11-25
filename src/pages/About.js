@@ -124,7 +124,7 @@ const About = () => {
           </div>
           <Link
             className="cursor-pointer [text-decoration:none] relative leading-[125%] text-[inherit] flex items-center w-16 h-8 shrink-0 ml-[-16px]"
-            to="/"
+            to="/blog"
           >
             Blog
           </Link>

@@ -5,15 +5,15 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Blog from "./pages/Blog";
-import Home from "./pages/Home";
-import BlogSingle from "./pages/BlogSingle";
-import Contact from "./pages/Contact";
-import PagesSingle from "./pages/PagesSingle";
-import About from "./pages/About";
-import Team from "./pages/Team";
 import TeamSingle from "./pages/TeamSingle";
+import Team from "./pages/Team";
+import Home from "./pages/Home";
+import About from "./pages/About";
 import Pages from "./pages/Pages";
+import PagesSingle from "./pages/PagesSingle";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
+import BlogSingle from "./pages/BlogSingle";
 
 function App() {
   const action = useNavigationType();
@@ -35,19 +35,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      case "/team":
+        title = "";
+        metaDescription = "";
+        break;
       case "/home":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/blogsingle":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/contact":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/pagessingle":
         title = "";
         metaDescription = "";
         break;
@@ -55,15 +47,23 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/team":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/teamsingle":
-        title = "";
-        metaDescription = "";
-        break;
       case "/pages":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/pagessingle":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/contact":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/blog":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/blogsingle":
         title = "";
         metaDescription = "";
         break;
@@ -85,15 +85,15 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Blog />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/blogsingle" element={<BlogSingle />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/pagessingle" element={<PagesSingle />} />
-      <Route path="/about" element={<About />} />
+      <Route path="/" element={<TeamSingle />} />
       <Route path="/team" element={<Team />} />
-      <Route path="/teamsingle" element={<TeamSingle />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/about" element={<About />} />
       <Route path="/pages" element={<Pages />} />
+      <Route path="/pagessingle" element={<PagesSingle />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/blogsingle" element={<BlogSingle />} />
     </Routes>
   );
 }

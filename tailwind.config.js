@@ -4,11 +4,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        white: "#fff",
         gray: {
           "100": "#111e22",
           "200": "#141414",
         },
-        white: "#fff",
         darkslategray: {
           "100": "#272d32",
           "200": "#1e2c30",
@@ -16,16 +16,16 @@ module.exports = {
         slategray: "#5c8692",
         lightslategray: "#7a9ca5",
         dimgray: "#555",
+        darkgray: "#9bb7bf",
         aliceblue: {
           "100": "#edf5f7",
           "200": "#ebf3f5",
         },
-        darkgray: "#9bb7bf",
         silver: "#c4c4c4",
         lightblue: "#95bfcb",
+        lightgray: "#d3d3d3",
         azure: "#effcff",
         black: "#000",
-        lightgray: "#d3d3d3",
       },
       spacing: {},
       fontFamily: {
@@ -44,16 +44,16 @@ module.exports = {
       "21xl": "40px",
       "36xl": "55px",
       sm: "14px",
-      "9xl": "28px",
-      smi: "13px",
-      base: "16px",
       "26xl": "45px",
+      "9xl": "28px",
+      "5xl": "24px",
+      base: "16px",
+      smi: "13px",
       "7xl": "26px",
       xl: "20px",
       lgi: "19px",
       "51xl": "70px",
       "11xl": "30px",
-      "5xl": "24px",
       inherit: "inherit",
     },
   },
