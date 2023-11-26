@@ -11,6 +11,8 @@ import {
 } from "@mui/material";
 
 import "./global.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 const muiTheme = createTheme();
 
@@ -22,6 +24,17 @@ root.render(
     <StyledEngineProvider injectFirst>
       <ThemeProvider theme={muiTheme}>
         <CssBaseline />
+        <ToastContainer
+            position="top-right"
+            autoClose={2000}
+            hideProgressBar={true}
+            closeOnClick={true}
+            pauseOnHover={true}
+            draggable={true}
+            progress={undefined}
+            limit={3}
+            theme="light"
+          />
         <App />
       </ThemeProvider>
     </StyledEngineProvider>

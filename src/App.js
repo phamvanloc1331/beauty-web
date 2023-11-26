@@ -14,6 +14,10 @@ import PagesSingle from "./pages/PagesSingle";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogSingle from "./pages/BlogSingle";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import AppoinmentList from "./pages/admin/AppoinmentList";
+
 
 function App() {
   const action = useNavigationType();
@@ -85,15 +89,18 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<TeamSingle />} />
+      <Route path="/" element={<Home />} />
       <Route path="/team" element={<Team />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/teamsingle" element={<TeamSingle />} />
       <Route path="/about" element={<About />} />
       <Route path="/pages" element={<Pages />} />
       <Route path="/pagessingle" element={<PagesSingle />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blogsingle" element={<BlogSingle />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<SignUp />} />
+      <Route path="/admin" element={<AppoinmentList />} />
     </Routes>
   );
 }
