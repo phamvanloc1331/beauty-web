@@ -43,10 +43,10 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/home":
-        title = "";
-        metaDescription = "";
-        break;
+      // case "/home":
+      //   title = "";
+      //   metaDescription = "";
+      //   break;
       case "/about":
         title = "";
         metaDescription = "";

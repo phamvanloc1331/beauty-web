@@ -41,7 +41,7 @@ const BlogSingle = () => {
       <div className="absolute w-[33.4%] top-[55.5px] right-[64.58%] left-[2.01%] flex flex-row items-center justify-start gap-[46px]">
         <Link
           className="cursor-pointer [text-decoration:none] flex-1 h-[35px] flex flex-row items-center justify-start gap-[11px] text-[inherit]"
-          to="/home"
+          to="/"
         >
           <img className="relative w-[33px] h-[33px]" alt="" src="/logo1.svg" />
           <b className="relative leading-[125%]">Beautyness</b>
@@ -61,7 +61,7 @@ const BlogSingle = () => {
         <div className="w-[338px] h-[27px] flex flex-row items-center justify-end">
           <Link
             className="cursor-pointer [text-decoration:none] relative leading-[125%] text-[inherit] flex items-center w-[84px] h-[30px] shrink-0"
-            to="/home"
+            to="/"
           >
             Home
           </Link>
